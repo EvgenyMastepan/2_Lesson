@@ -12,6 +12,7 @@ final class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabs()
+        customizeTabBar()
         
     }
     
@@ -44,7 +45,7 @@ final class MainTabBarController: UITabBarController {
     
     private func customizeTabBar() {
           tabBar.tintColor = .systemBlue
-          tabBar.unselectedItemTintColor = .white
+          tabBar.unselectedItemTintColor = .gray
           tabBar.backgroundColor = .systemBackground
       }
 }

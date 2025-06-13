@@ -114,7 +114,7 @@ class FirstViewController: UIViewController {
         self.passwordTextField.frame.size.height = 49
         
         self.registrationButton.frame.origin.x = safeArea.left + indention
-        self.registrationButton.frame.origin.y = passwordTextField.frame.maxY + 176
+        self.registrationButton.frame.origin.y = passwordTextField.frame.maxY + 76
         self.registrationButton.frame.size.width = view.frame.maxX - 2 * indention
         self.registrationButton.frame.size.height = 58
     }

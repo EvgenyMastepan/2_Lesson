@@ -54,6 +54,8 @@ final class PersonButton: UIButton {
         title: String? = nil,
         titleColor: UIColor = .white,
         font: UIFont = .systemFont(ofSize: 16, weight: .medium),
+        setImage: UIImage? = nil,
+        tintColor: UIColor? = nil,
         backgroundColor: UIColor = .systemBlue,
         cornerRadius: CGFloat = 20,
     ){
@@ -61,6 +63,8 @@ final class PersonButton: UIButton {
         self.setTitle(title, for: .normal)
         self.setTitleColor(titleColor, for: .normal)
         self.titleLabel?.font = font
+        self.setImage(setImage, for: .normal)
+        self.tintColor = tintColor
         self.backgroundColor = backgroundColor
         self.layer.cornerRadius = cornerRadius
         self.clipsToBounds = true
